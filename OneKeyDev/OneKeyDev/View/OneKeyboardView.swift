@@ -25,6 +25,7 @@ class OneKeyboardView: UIView {
     @IBOutlet weak var firstViewLeadingConstraint: NSLayoutConstraint!
     
     // MARK: - Properties
+    var viewModel = OneKeyboardViewModel()
     weak var delegate:OneKeyboardViewDelegate?
     var selectedPage:KeyboardPage = .firstPage {
         didSet{
@@ -63,7 +64,7 @@ class OneKeyboardView: UIView {
     
     // MARK: - Initial functions
     func setup(){
-        // TODO: setup things
+        viewModel.delegate = self
     }
     
     // MARK: - Functions
@@ -71,3 +72,14 @@ class OneKeyboardView: UIView {
         keyboardButton.isHidden = !visible
     }
 }
+
+// MARK: - OneKeyboardViewModel Delegate
+extension OneKeyboardView: OneKeyboardViewModelDelegate {
+    
+    func tellJoke(_ joke:String, _ image:UIImage){
+        jokeTextView.text = joke
+        jokeImageView.image = image
+    }
+    
+}
+

@@ -16,7 +16,7 @@ extension OneKeyboardView {
             case .success:
                 do {
                     let joke = try result.get()
-                    // TODO: update view model
+                    self.viewModel.formatJoke(joke)
                 } catch {
                     print(error.localizedDescription)
                 }
