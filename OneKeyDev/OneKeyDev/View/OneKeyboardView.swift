@@ -45,11 +45,11 @@ class OneKeyboardView: UIView {
     
     // MARK: - IBActions
     @IBAction func nextViewButtonPressed(_ sender: KeyboardButton) {
-        // TODO: Scroll to 1
+        scroll(to: .secondPage)
     }
     
     @IBAction func backButtonPressed(_ sender: KeyboardButton) {
-        // TODO: Scroll to 0
+        scroll(to: .firstPage)
     }
     @IBAction func getNewJokeButtonPressed(_ sender: KeyboardButton) {
         // TODO: Get new joke
