@@ -31,6 +31,8 @@
 		694C1919243D2F2100B4C44C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1917243D2F1F00B4C44C /* Router.swift */; };
 		694C191B243D2F7C00B4C44C /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191A243D2F7C00B4C44C /* ServiceLayer.swift */; };
 		694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191A243D2F7C00B4C44C /* ServiceLayer.swift */; };
+		694C1920243D305700B4C44C /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191F243D305700B4C44C /* Joke.swift */; };
+		694C1921243D305700B4C44C /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191F243D305700B4C44C /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,7 @@
 		694C1908243D298300B4C44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694C1917243D2F1F00B4C44C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		694C191A243D2F7C00B4C44C /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		694C191F243D305700B4C44C /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,7 @@
 				694C18F1243D22A500B4C44C /* Controller */,
 				694C18F9243D263D00B4C44C /* Data */,
 				694C18F2243D24B800B4C44C /* View */,
+				694C191E243D304C00B4C44C /* Model */,
 			);
 			path = OneKeyDev;
 			sourceTree = "<group>";
@@ -216,6 +220,14 @@
 				694C191A243D2F7C00B4C44C /* ServiceLayer.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		694C191E243D304C00B4C44C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				694C191F243D305700B4C44C /* Joke.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694C1920243D305700B4C44C /* Joke.swift in Sources */,
 				694C18FD243D270F00B4C44C /* KeyboardPage.swift in Sources */,
 				694C18F8243D258500B4C44C /* KeyboardButton.swift in Sources */,
 				694C18FF243D281800B4C44C /* OneKeyboardView+UI.swift in Sources */,
@@ -416,6 +429,7 @@
 				694C1911243D2C3A00B4C44C /* KeyboardPage.swift in Sources */,
 				694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */,
 				694C1919243D2F2100B4C44C /* Router.swift in Sources */,
+				694C1921243D305700B4C44C /* Joke.swift in Sources */,
 				694C1910243D2C3A00B4C44C /* KeyboardColors.swift in Sources */,
 				694C1913243D2C3A00B4C44C /* OneKeyboardView.swift in Sources */,
 				694C1907243D298300B4C44C /* KeyboardViewController.swift in Sources */,
