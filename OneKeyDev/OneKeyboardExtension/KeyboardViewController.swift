@@ -9,18 +9,29 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
+    // MARK: - IBOutlets
     @IBOutlet var nextKeyboardButton: UIButton!
+    
+    
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupNextButton()
+    }
+    
+    // MARK: - Layout functions
+    override func viewWillLayoutSubviews() {
+        self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
+        super.viewWillLayoutSubviews()
+    }
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
-        
-        // Add custom view sizing constraints here
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Perform custom UI setup here
+    // MARK: - Functions
+    func setupNextButton(){
         self.nextKeyboardButton = UIButton(type: .system)
         
         self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
@@ -35,11 +46,7 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
-    override func viewWillLayoutSubviews() {
-        self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
-        super.viewWillLayoutSubviews()
-    }
-    
+    // MARK: - Keyboard functions
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
