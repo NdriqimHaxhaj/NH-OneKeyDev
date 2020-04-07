@@ -125,16 +125,15 @@ class KeyboardViewController: UIInputViewController {
     }
     
     override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
+        let colorScheme: KeyboardColorScheme
         
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
+        if textDocumentProxy.keyboardAppearance == .dark {
+            colorScheme = .dark
         } else {
-            textColor = UIColor.black
+            colorScheme = .light
         }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
+        
+        oneKeyboardView.setColorScheme(for: self.view, colorScheme)
     }
 
 }
