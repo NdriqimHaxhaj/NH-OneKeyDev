@@ -13,8 +13,6 @@
 		694C18C8243D224900B4C44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C18C6243D224900B4C44C /* Main.storyboard */; };
 		694C18CA243D224A00B4C44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C18C9243D224A00B4C44C /* Assets.xcassets */; };
 		694C18CD243D224A00B4C44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C18CB243D224A00B4C44C /* LaunchScreen.storyboard */; };
-		694C18D8243D224A00B4C44C /* OneKeyDevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18D7243D224A00B4C44C /* OneKeyDevTests.swift */; };
-		694C18E3243D224A00B4C44C /* OneKeyDevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18E2243D224A00B4C44C /* OneKeyDevUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		694C18CC243D224A00B4C44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694C18CE243D224A00B4C44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694C18D3243D224A00B4C44C /* OneKeyDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneKeyDevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		694C18D7243D224A00B4C44C /* OneKeyDevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneKeyDevTests.swift; sourceTree = "<group>"; };
-		694C18D9243D224A00B4C44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694C18DE243D224A00B4C44C /* OneKeyDevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneKeyDevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		694C18E2243D224A00B4C44C /* OneKeyDevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneKeyDevUITests.swift; sourceTree = "<group>"; };
-		694C18E4243D224A00B4C44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				694C18BF243D224900B4C44C /* OneKeyDev */,
-				694C18D6243D224A00B4C44C /* OneKeyDevTests */,
-				694C18E1243D224A00B4C44C /* OneKeyDevUITests */,
 				694C18BE243D224900B4C44C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				694C18CE243D224A00B4C44C /* Info.plist */,
 			);
 			path = OneKeyDev;
-			sourceTree = "<group>";
-		};
-		694C18D6243D224A00B4C44C /* OneKeyDevTests */ = {
-			isa = PBXGroup;
-			children = (
-				694C18D7243D224A00B4C44C /* OneKeyDevTests.swift */,
-				694C18D9243D224A00B4C44C /* Info.plist */,
-			);
-			path = OneKeyDevTests;
-			sourceTree = "<group>";
-		};
-		694C18E1243D224A00B4C44C /* OneKeyDevUITests */ = {
-			isa = PBXGroup;
-			children = (
-				694C18E2243D224A00B4C44C /* OneKeyDevUITests.swift */,
-				694C18E4243D224A00B4C44C /* Info.plist */,
-			);
-			path = OneKeyDevUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694C18D8243D224A00B4C44C /* OneKeyDevTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694C18E3243D224A00B4C44C /* OneKeyDevUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
