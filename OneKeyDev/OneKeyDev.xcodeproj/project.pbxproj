@@ -33,6 +33,8 @@
 		694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191A243D2F7C00B4C44C /* ServiceLayer.swift */; };
 		694C1920243D305700B4C44C /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191F243D305700B4C44C /* Joke.swift */; };
 		694C1921243D305700B4C44C /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191F243D305700B4C44C /* Joke.swift */; };
+		694C1923243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */; };
+		694C1924243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,7 @@
 		694C1917243D2F1F00B4C44C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		694C191A243D2F7C00B4C44C /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		694C191F243D305700B4C44C /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OneKeyboardView+Network.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,7 @@
 				694C18F5243D24F500B4C44C /* OneKeyboardView.xib */,
 				694C18F3243D24D500B4C44C /* OneKeyboardView.swift */,
 				694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */,
+				694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */,
 				694C18F7243D258500B4C44C /* KeyboardButton.swift */,
 			);
 			path = View;
@@ -395,6 +399,7 @@
 				694C1920243D305700B4C44C /* Joke.swift in Sources */,
 				694C18FD243D270F00B4C44C /* KeyboardPage.swift in Sources */,
 				694C18F8243D258500B4C44C /* KeyboardButton.swift in Sources */,
+				694C1923243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */,
 				694C18FF243D281800B4C44C /* OneKeyboardView+UI.swift in Sources */,
 				694C18C5243D224900B4C44C /* ViewController.swift in Sources */,
 				694C1918243D2F1F00B4C44C /* Router.swift in Sources */,
@@ -427,6 +432,7 @@
 				694C1915243D2C3A00B4C44C /* KeyboardButton.swift in Sources */,
 				694C1914243D2C3A00B4C44C /* OneKeyboardView+UI.swift in Sources */,
 				694C1911243D2C3A00B4C44C /* KeyboardPage.swift in Sources */,
+				694C1924243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */,
 				694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */,
 				694C1919243D2F2100B4C44C /* Router.swift in Sources */,
 				694C1921243D305700B4C44C /* Joke.swift in Sources */,

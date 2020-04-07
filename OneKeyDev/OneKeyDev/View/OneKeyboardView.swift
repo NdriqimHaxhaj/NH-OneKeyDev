@@ -26,14 +26,20 @@ class OneKeyboardView: UIView {
     
     // MARK: - Properties
     weak var delegate:OneKeyboardViewDelegate?
-    var selectedPage:KeyboardPage = .firstPage
+    var selectedPage:KeyboardPage = .firstPage {
+        didSet{
+            if selectedPage == .secondPage {
+                getJoke()
+            }
+        }
+    }
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -52,7 +58,7 @@ class OneKeyboardView: UIView {
         scroll(to: .firstPage)
     }
     @IBAction func getNewJokeButtonPressed(_ sender: KeyboardButton) {
-        // TODO: Get new joke
+        getJoke()
     }
     
     // MARK: - Initial functions
@@ -62,6 +68,6 @@ class OneKeyboardView: UIView {
     
     // MARK: - Functions
     func setNextKeyboardVisible(_ visible: Bool) {
-      keyboardButton.isHidden = !visible
+        keyboardButton.isHidden = !visible
     }
 }
