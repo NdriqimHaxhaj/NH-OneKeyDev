@@ -35,6 +35,8 @@
 		694C1921243D305700B4C44C /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191F243D305700B4C44C /* Joke.swift */; };
 		694C1923243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */; };
 		694C1924243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */; };
+		694C1927243D337400B4C44C /* OneKeyboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1926243D337400B4C44C /* OneKeyboardViewModel.swift */; };
+		694C1928243D337400B4C44C /* OneKeyboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1926243D337400B4C44C /* OneKeyboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,7 @@
 		694C191A243D2F7C00B4C44C /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		694C191F243D305700B4C44C /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		694C1922243D320500B4C44C /* OneKeyboardView+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OneKeyboardView+Network.swift"; sourceTree = "<group>"; };
+		694C1926243D337400B4C44C /* OneKeyboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneKeyboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,7 @@
 				694C18F9243D263D00B4C44C /* Data */,
 				694C18F2243D24B800B4C44C /* View */,
 				694C191E243D304C00B4C44C /* Model */,
+				694C1925243D334300B4C44C /* ViewModel */,
 			);
 			path = OneKeyDev;
 			sourceTree = "<group>";
@@ -232,6 +236,14 @@
 				694C191F243D305700B4C44C /* Joke.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		694C1925243D334300B4C44C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				694C1926243D337400B4C44C /* OneKeyboardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +419,7 @@
 				694C18FB243D26E900B4C44C /* KeyboardColors.swift in Sources */,
 				694C18C1243D224900B4C44C /* AppDelegate.swift in Sources */,
 				694C18F4243D24D500B4C44C /* OneKeyboardView.swift in Sources */,
+				694C1927243D337400B4C44C /* OneKeyboardViewModel.swift in Sources */,
 				694C18C3243D224900B4C44C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +444,7 @@
 			files = (
 				694C1915243D2C3A00B4C44C /* KeyboardButton.swift in Sources */,
 				694C1914243D2C3A00B4C44C /* OneKeyboardView+UI.swift in Sources */,
+				694C1928243D337400B4C44C /* OneKeyboardViewModel.swift in Sources */,
 				694C1911243D2C3A00B4C44C /* KeyboardPage.swift in Sources */,
 				694C1924243D320500B4C44C /* OneKeyboardView+Network.swift in Sources */,
 				694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */,
