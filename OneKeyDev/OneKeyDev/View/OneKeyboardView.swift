@@ -26,6 +26,7 @@ class OneKeyboardView: UIView {
     
     // MARK: - Properties
     weak var delegate:OneKeyboardViewDelegate?
+    var selectedPage:KeyboardPage = .firstPage
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {

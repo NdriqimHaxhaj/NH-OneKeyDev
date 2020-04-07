@@ -18,6 +18,7 @@
 		694C18F8243D258500B4C44C /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18F7243D258500B4C44C /* KeyboardButton.swift */; };
 		694C18FB243D26E900B4C44C /* KeyboardColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FA243D26E900B4C44C /* KeyboardColors.swift */; };
 		694C18FD243D270F00B4C44C /* KeyboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FC243D270F00B4C44C /* KeyboardPage.swift */; };
+		694C18FF243D281800B4C44C /* OneKeyboardView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		694C18F7243D258500B4C44C /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		694C18FA243D26E900B4C44C /* KeyboardColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardColors.swift; sourceTree = "<group>"; };
 		694C18FC243D270F00B4C44C /* KeyboardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPage.swift; sourceTree = "<group>"; };
+		694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OneKeyboardView+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +135,9 @@
 		694C18F2243D24B800B4C44C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				694C18F3243D24D500B4C44C /* OneKeyboardView.swift */,
 				694C18F5243D24F500B4C44C /* OneKeyboardView.xib */,
+				694C18F3243D24D500B4C44C /* OneKeyboardView.swift */,
+				694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */,
 				694C18F7243D258500B4C44C /* KeyboardButton.swift */,
 			);
 			path = View;
@@ -282,6 +285,7 @@
 			files = (
 				694C18FD243D270F00B4C44C /* KeyboardPage.swift in Sources */,
 				694C18F8243D258500B4C44C /* KeyboardButton.swift in Sources */,
+				694C18FF243D281800B4C44C /* OneKeyboardView+UI.swift in Sources */,
 				694C18C5243D224900B4C44C /* ViewController.swift in Sources */,
 				694C18FB243D26E900B4C44C /* KeyboardColors.swift in Sources */,
 				694C18C1243D224900B4C44C /* AppDelegate.swift in Sources */,
