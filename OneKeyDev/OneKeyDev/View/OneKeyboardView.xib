@@ -119,7 +119,7 @@
                 <outlet property="firstViewLeadingConstraint" destination="Z5C-9j-VMT" id="3Dd-AW-tK9"/>
                 <outlet property="jokeImageView" destination="9bk-JW-yqA" id="yJR-9b-Gv2"/>
                 <outlet property="jokeTextView" destination="hSo-fl-RCL" id="fc8-YK-fDA"/>
-                <outlet property="keyboardButton" destination="Dfc-cV-58L" id="lbb-kO-vuL"/>
+                <outlet property="nextKeyboardButton" destination="Dfc-cV-58L" id="lbb-kO-vuL"/>
             </connections>
             <point key="canvasLocation" x="-324.63768115942031" y="-9.0401785714285712"/>
         </view>

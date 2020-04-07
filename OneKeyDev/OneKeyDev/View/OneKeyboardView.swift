@@ -19,7 +19,7 @@ class OneKeyboardView: UIView {
     @IBOutlet weak var backButton: KeyboardButton!
     @IBOutlet weak var jokeImageView: UIImageView!
     @IBOutlet weak var jokeTextView: UITextView!
-    @IBOutlet weak var keyboardButton: KeyboardButton!
+    @IBOutlet weak var nextKeyboardButton: KeyboardButton!
     
     // MARK: - Constraints
     @IBOutlet weak var firstViewLeadingConstraint: NSLayoutConstraint!
@@ -65,11 +65,12 @@ class OneKeyboardView: UIView {
     // MARK: - Initial functions
     func setup(){
         viewModel.delegate = self
+        setNextKeyboardVisible(false)
     }
     
     // MARK: - Functions
     func setNextKeyboardVisible(_ visible: Bool) {
-        keyboardButton.isHidden = !visible
+        nextKeyboardButton.isHidden = !visible
     }
 }
 

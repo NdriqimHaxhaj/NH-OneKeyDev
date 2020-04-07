@@ -114,8 +114,8 @@ class KeyboardViewController: UIInputViewController {
         view.addConstraints(constraints)
         NSLayoutConstraint.activate(constraints)
         
-        oneKeyboardView.setNextKeyboardVisible(!needsInputModeSwitchKey)
-        oneKeyboardView.keyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+        oneKeyboardView.setNextKeyboardVisible(needsInputModeSwitchKey)
+        oneKeyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         oneKeyboardView.delegate = self
     }
     
