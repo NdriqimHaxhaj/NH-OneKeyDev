@@ -9,7 +9,7 @@
 import UIKit
 
 protocol OneKeyboardViewDelegate: class {
-    // TODO: Update height at Keyboard extension somehow
+    func updateHeight()
 }
 
 class OneKeyboardView: UIView {

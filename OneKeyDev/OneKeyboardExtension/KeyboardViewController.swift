@@ -23,6 +23,10 @@ class KeyboardViewController: UIInputViewController {
     var heightConstraint: NSLayoutConstraint!
     var extendedHeightConstraint:NSLayoutConstraint!
     
+    // MARK: - Constants
+    let additionalHeight:CGFloat = 20
+    var keyboardHeight:CGFloat?
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +42,35 @@ class KeyboardViewController: UIInputViewController {
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
+        
+        if (view.frame.size.width == 0 || view.frame.size.height == 0) {
+            return
+        }
+        
+        if oneKeyboardView.selectedPage == .secondPage {
+            keyboardHeight = oneKeyboardView.bounds.height
+            extendedHeightConstraint = NSLayoutConstraint(item: self.view as Any,
+                                                          attribute: .height,
+                                                          relatedBy: .equal,
+                                                          toItem: nil,
+                                                          attribute: .notAnAttribute,
+                                                          multiplier: 0.0,
+                                                          constant: keyboardHeight! + 20)
+            view.removeConstraint(heightConstraint)
+            view.addConstraint(extendedHeightConstraint)
+        } else {
+            guard let keyboardHeight = keyboardHeight else {return}
+            heightConstraint = NSLayoutConstraint(item: self.view as Any,
+                                                  attribute: .height,
+                                                  relatedBy: .equal,
+                                                  toItem: nil,
+                                                  attribute: .notAnAttribute,
+                                                  multiplier: 0.0,
+                                                  constant: keyboardHeight)
+            view.removeConstraint(extendedHeightConstraint)
+            view.addConstraint(heightConstraint)
+        }
+        self.view.layoutIfNeeded()
     }
     
     // MARK: - Functions
@@ -108,5 +141,7 @@ class KeyboardViewController: UIInputViewController {
 
 // MARK: - OneKeyboardView Delegate
 extension KeyboardViewController: OneKeyboardViewDelegate {
-    
+    func updateHeight() {
+        updateViewConstraints()
+    }
 }

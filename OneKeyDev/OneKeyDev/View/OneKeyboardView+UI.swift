@@ -32,7 +32,7 @@ extension OneKeyboardView {
             self.layoutIfNeeded()
         }) { (_) in
             self.selectedPage = page
-            // TODO: Update height on keybaord
+            self.delegate?.updateHeight()
         }
     }
 }
