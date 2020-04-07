@@ -21,6 +21,12 @@
 		694C18FF243D281800B4C44C /* OneKeyboardView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */; };
 		694C1907243D298300B4C44C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1906243D298300B4C44C /* KeyboardViewController.swift */; };
 		694C190B243D298300B4C44C /* OneKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 694C1904243D298300B4C44C /* OneKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		694C1910243D2C3A00B4C44C /* KeyboardColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FA243D26E900B4C44C /* KeyboardColors.swift */; };
+		694C1911243D2C3A00B4C44C /* KeyboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FC243D270F00B4C44C /* KeyboardPage.swift */; };
+		694C1912243D2C3A00B4C44C /* OneKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694C18F5243D24F500B4C44C /* OneKeyboardView.xib */; };
+		694C1913243D2C3A00B4C44C /* OneKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18F3243D24D500B4C44C /* OneKeyboardView.swift */; };
+		694C1914243D2C3A00B4C44C /* OneKeyboardView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */; };
+		694C1915243D2C3A00B4C44C /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18F7243D258500B4C44C /* KeyboardButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694C1912243D2C3A00B4C44C /* OneKeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694C1915243D2C3A00B4C44C /* KeyboardButton.swift in Sources */,
+				694C1914243D2C3A00B4C44C /* OneKeyboardView+UI.swift in Sources */,
+				694C1911243D2C3A00B4C44C /* KeyboardPage.swift in Sources */,
+				694C1910243D2C3A00B4C44C /* KeyboardColors.swift in Sources */,
+				694C1913243D2C3A00B4C44C /* OneKeyboardView.swift in Sources */,
 				694C1907243D298300B4C44C /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

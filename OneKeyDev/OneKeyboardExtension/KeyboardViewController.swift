@@ -12,12 +12,22 @@ class KeyboardViewController: UIInputViewController {
     // MARK: - IBOutlets
     @IBOutlet var nextKeyboardButton: UIButton!
     
+    // MARK: - Properties
+    var oneKeyboardView: OneKeyboardView!
     
+    // MARK: - Constraints
+    var topConstraint: NSLayoutConstraint!
+    var leftConstraint: NSLayoutConstraint!
+    var rightConstraint: NSLayoutConstraint!
+    var bottomConstraint: NSLayoutConstraint!
+    var heightConstraint: NSLayoutConstraint!
+    var extendedHeightConstraint:NSLayoutConstraint!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNextButton()
+        setupOneKeyboardView()
     }
     
     // MARK: - Layout functions
@@ -46,6 +56,36 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
     
+    func setupOneKeyboardView(){
+        let nib = UINib(nibName: "OneKeyboardView", bundle: nil)
+        let objects = nib.instantiate(withOwner: nil, options: nil)
+        oneKeyboardView = objects.first as? OneKeyboardView
+        guard let inputView = inputView else { return }
+        inputView.addSubview(oneKeyboardView)
+        
+        // 3
+        oneKeyboardView.translatesAutoresizingMaskIntoConstraints = false
+        
+        topConstraint = oneKeyboardView.topAnchor.constraint(equalTo: inputView.topAnchor)
+        leftConstraint = oneKeyboardView.leftAnchor.constraint(equalTo: inputView.leftAnchor)
+        rightConstraint = oneKeyboardView.rightAnchor.constraint(equalTo: inputView.rightAnchor)
+        bottomConstraint = oneKeyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor)
+        heightConstraint = oneKeyboardView.heightAnchor.constraint(equalTo: inputView.heightAnchor)
+        
+        let constraints:[NSLayoutConstraint] = [topConstraint,
+                                                leftConstraint,
+                                                rightConstraint,
+                                                bottomConstraint,
+                                                heightConstraint]
+        
+        view.addConstraints(constraints)
+        NSLayoutConstraint.activate(constraints)
+        
+        oneKeyboardView.setNextKeyboardVisible(!needsInputModeSwitchKey)
+        oneKeyboardView.keyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+        oneKeyboardView.delegate = self
+    }
+    
     // MARK: - Keyboard functions
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
@@ -64,4 +104,9 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
 
+}
+
+// MARK: - OneKeyboardView Delegate
+extension KeyboardViewController: OneKeyboardViewDelegate {
+    
 }
