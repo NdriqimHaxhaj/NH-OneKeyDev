@@ -27,6 +27,10 @@
 		694C1913243D2C3A00B4C44C /* OneKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18F3243D24D500B4C44C /* OneKeyboardView.swift */; };
 		694C1914243D2C3A00B4C44C /* OneKeyboardView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18FE243D281800B4C44C /* OneKeyboardView+UI.swift */; };
 		694C1915243D2C3A00B4C44C /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C18F7243D258500B4C44C /* KeyboardButton.swift */; };
+		694C1918243D2F1F00B4C44C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1917243D2F1F00B4C44C /* Router.swift */; };
+		694C1919243D2F2100B4C44C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1917243D2F1F00B4C44C /* Router.swift */; };
+		694C191B243D2F7C00B4C44C /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191A243D2F7C00B4C44C /* ServiceLayer.swift */; };
+		694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C191A243D2F7C00B4C44C /* ServiceLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +91,8 @@
 		694C1904243D298300B4C44C /* OneKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		694C1906243D298300B4C44C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		694C1908243D298300B4C44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694C1917243D2F1F00B4C44C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		694C191A243D2F7C00B4C44C /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 				694C18C6243D224900B4C44C /* Main.storyboard */,
 				694C18C9243D224A00B4C44C /* Assets.xcassets */,
 				694C18F0243D228900B4C44C /* App Delegate */,
+				694C1916243D2F0F00B4C44C /* Network */,
 				694C18F1243D22A500B4C44C /* Controller */,
 				694C18F9243D263D00B4C44C /* Data */,
 				694C18F2243D24B800B4C44C /* View */,
@@ -200,6 +207,15 @@
 				694C1908243D298300B4C44C /* Info.plist */,
 			);
 			path = OneKeyboardExtension;
+			sourceTree = "<group>";
+		};
+		694C1916243D2F0F00B4C44C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				694C1917243D2F1F00B4C44C /* Router.swift */,
+				694C191A243D2F7C00B4C44C /* ServiceLayer.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +384,8 @@
 				694C18F8243D258500B4C44C /* KeyboardButton.swift in Sources */,
 				694C18FF243D281800B4C44C /* OneKeyboardView+UI.swift in Sources */,
 				694C18C5243D224900B4C44C /* ViewController.swift in Sources */,
+				694C1918243D2F1F00B4C44C /* Router.swift in Sources */,
+				694C191B243D2F7C00B4C44C /* ServiceLayer.swift in Sources */,
 				694C18FB243D26E900B4C44C /* KeyboardColors.swift in Sources */,
 				694C18C1243D224900B4C44C /* AppDelegate.swift in Sources */,
 				694C18F4243D24D500B4C44C /* OneKeyboardView.swift in Sources */,
@@ -396,6 +414,8 @@
 				694C1915243D2C3A00B4C44C /* KeyboardButton.swift in Sources */,
 				694C1914243D2C3A00B4C44C /* OneKeyboardView+UI.swift in Sources */,
 				694C1911243D2C3A00B4C44C /* KeyboardPage.swift in Sources */,
+				694C191C243D2F7C00B4C44C /* ServiceLayer.swift in Sources */,
+				694C1919243D2F2100B4C44C /* Router.swift in Sources */,
 				694C1910243D2C3A00B4C44C /* KeyboardColors.swift in Sources */,
 				694C1913243D2C3A00B4C44C /* OneKeyboardView.swift in Sources */,
 				694C1907243D298300B4C44C /* KeyboardViewController.swift in Sources */,
