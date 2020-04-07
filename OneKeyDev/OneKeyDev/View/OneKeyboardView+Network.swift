@@ -9,9 +9,9 @@ import UIKit
 
 extension OneKeyboardView {
     func getJoke(){
-        // TODO: start loader
+        self.showLoader()
         ServiceLayer.request(router: .getJoke) { (result: Result<Joke, Error>) in
-            // TODO: stop loader
+            self.stopLoader()
             switch result {
             case .success:
                 do {
